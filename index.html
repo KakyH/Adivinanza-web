@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juego de Adivinanzas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="startScreen" class="container">
+        <h1>Juego de Adivinanzas</h1>
+        <p>¿Estás preparado para jugar?</p>
+        <button onclick="startGame()">Sí, ¡Vamos!</button>
+    </div>
+
+    <div id="gameScreen" class="container hidden">
+        <h1>Juego de Adivinanzas</h1>
+        <p>Intenta adivinar el número entre 1 y 100:</p>
+        <input type="number" id="guessInput">
+        <button onclick="checkGuess()">Adivinar</button>
+        <p id="result"></p>
+        <div id="stats">
+            <p>Intentos: <span id="attemptCount">0</span></p>
+            <p>Tiempo: <span id="timeElapsed">0</span> segundos</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
